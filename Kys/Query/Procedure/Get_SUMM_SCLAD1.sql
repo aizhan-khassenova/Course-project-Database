@@ -1,0 +1,12 @@
+CREATE PROCEDURE Get_SUMM_SCLAD1
+AS
+BEGIN
+SELECT [NAME]
+      ,[TYPES]
+      ,[CNAME]
+      ,[PRICE]
+      ,[COUNT]
+      ,([PRICE]*[COUNT]) AS TOTAL_SUMM
+  FROM [Hasenova].[dbo].[SCLAD]
+END
+GO
